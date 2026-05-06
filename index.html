@@ -1717,6 +1717,56 @@ h2 .it.slate { color: var(--slate); }
   max-width: 480px; line-height: 1.55;
 }
 
+/* ──────── INCLUDED TRUST STRIP (security/quality reassurance) ──────── */
+.included-strip {
+  margin-top: 3.5rem; padding-top: 2.25rem;
+  border-top: 1px solid var(--ink-08);
+}
+.included-eyebrow {
+  font-family: var(--mono); font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--sage-dk);
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.included-eyebrow::before {
+  content: ''; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--sage); display: inline-block;
+}
+.included-title {
+  font-family: var(--serif); font-weight: 600;
+  font-size: clamp(1.4rem, 2.2vw, 1.65rem);
+  letter-spacing: -0.012em; line-height: 1.2; color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+.included-title em {
+  font-style: italic; font-weight: 500; color: var(--sage-dk);
+}
+.included-sub {
+  font-size: 0.95rem; line-height: 1.55; color: var(--ink-80);
+  max-width: 60ch; margin-bottom: 1.5rem;
+}
+.included-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+  gap: 0.75rem;
+}
+.included-pill {
+  display: flex; align-items: flex-start; gap: 0.6rem;
+  padding: 0.85rem 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--ink-08);
+  border-radius: 10px;
+}
+.included-pill .ip-check {
+  flex-shrink: 0; width: 18px; height: 18px; border-radius: 50%;
+  background: var(--sage); color: var(--paper);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 0.7rem; font-weight: 700;
+  margin-top: 1px;
+}
+.included-pill .ip-text { font-size: 0.85rem; line-height: 1.4; color: var(--ink); }
+.included-pill .ip-text b { font-weight: 600; color: var(--ink); }
+
 /* ──────── CTA BAND ──────── */
 .cta-band {
   background: var(--ink) !important; color: var(--paper);
@@ -2006,11 +2056,10 @@ footer {
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="#recently-built">Recent work</a></li>
+    <li><a href="#recently-built">What I build</a></li>
     <li><a href="#how">How it works</a></li>
     <li><a href="#cocreate">Co-creation</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#what-we-build">What we build</a></li>
     <li><a href="#pricing">Pricing</a></li>
     <li><a class="nav-cta" href="#contact">Let's talk →</a></li>
   </ul>
@@ -2033,7 +2082,7 @@ footer {
       <span class="small">Custom tools, hand-stitched to fit how your team actually works.</span>
     </h1>
     <p class="hero-lede r d2">
-      Most software gets shipped to you and asks your team to adapt. <b>I tailor the other way around.</b> Every tool is shaped through close collaboration with the people whose work it'll change — measured, fitted, and adjusted until it sits right. <b>14 years of enterprise software delivery, applied to your business problem.</b> What can we build together?
+      Most software gets shipped to you and asks your team to adapt. <b>I tailor the other way around.</b> Every tool is shaped through close collaboration with the people whose work it'll change — measured, fitted, and adjusted until it sits right. <b>14 years of leading teams at scale — 7 in the military, 7 in enterprise tech.</b> What can we build together?
     </p>
     <div class="hero-actions r d3">
       <a class="btn-primary" href="#contact"><span>Start a conversation</span><span class="arrow">→</span></a>
@@ -2042,38 +2091,6 @@ footer {
   </div>
 </section>
 
-<!-- LOGO STRIP -->
-<div class="logos">
-  <div class="logos-inner">
-    <div class="logos-label">
-      <b>14 years building</b>
-      across military, consulting & enterprise tech
-    </div>
-    <div class="logos-row">
-      <div class="logo-pill">
-        <div class="lp-dot army"></div>
-        Military Officer
-        <span class="lp-meta">· 7 yrs logistics</span>
-      </div>
-      <div class="logo-pill">
-        <div class="lp-dot acct"></div>
-        Tech Strategy Consulting
-        <span class="lp-meta">· Big Four firm</span>
-      </div>
-      <div class="logo-pill">
-        <div class="lp-dot com"></div>
-        Senior Product Owner
-        <span class="lp-meta">· Fortune 50 enterprise</span>
-      </div>
-      <div class="logo-pill">
-        <div class="lp-dot mba"></div>
-        MBA
-        <span class="lp-meta">· Strategy & Operations</span>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- WHAT'S POSSIBLE — capabilities (replaces specific client case studies) -->
 <section class="case-section" id="recently-built">
   <div class="section-inner">
@@ -2081,7 +2098,7 @@ footer {
       <div class="case-header-text">
         <div class="section-eyebrow r"><div class="se-dot"></div><div class="se-text">What's possible</div></div>
         <h2 class="r d1">Enterprise-grade tools, <span class="it">small business price.</span></h2>
-        <p class="section-intro r d2" style="margin-bottom:0">14 years of building software at scale — military operations, Big Four consulting, Fortune 50 product delivery — applied to the kinds of problems small and medium businesses actually face. <b>Modern AI tools make this possible at a fraction of what agencies charge.</b> Here's the kind of work I deliver.</p>
+        <p class="section-intro r d2" style="margin-bottom:0">14 years of leading complex operations — military logistics, Big Four consulting, Fortune 50 product delivery — applied to the kinds of problems small and medium businesses actually face. <b>Modern AI tools make this possible at a fraction of what agencies charge.</b> Here's the kind of work I deliver.</p>
       </div>
     </div>
 
@@ -2143,7 +2160,7 @@ footer {
       <div class="case-stats">
         <div class="case-stat">
           <div class="case-stat-num">14</div>
-          <div class="case-stat-lbl"><b>years experience</b><br>shipping at scale</div>
+          <div class="case-stat-lbl"><b>years experience</b><br>leading at scale</div>
         </div>
         <div class="case-stat">
           <div class="case-stat-num slate">4–14</div>
@@ -2181,8 +2198,8 @@ footer {
           </div>
           <div class="cap r d1">
             <div class="cap-icon">🔐</div>
-            <div class="cap-name">Secure authentication</div>
-            <div class="cap-desc">SSO via Google, Microsoft, Okta. Role-based permissions and audit trails. Built right from day one — not bolted on later when you're trying to enterprise-sell.</div>
+            <div class="cap-name">Secure by default</div>
+            <div class="cap-desc">SSO, role-based permissions, encrypted data, audit logging, dependency scanning, secrets management. Built to enterprise standards from day one — not bolted on later when you're trying to win bigger clients.</div>
           </div>
           <div class="cap r d2">
             <div class="cap-icon">📝</div>
@@ -2248,7 +2265,7 @@ footer {
           <div class="dcp-metric-lbl"><b>Military operations</b><br>discipline applied</div>
         </div>
         <div class="dcp-metric">
-          <div class="dcp-metric-num">14<span style="font-size:1.1rem;">y</span></div>
+          <div class="dcp-metric-num">7<span style="font-size:1.1rem;">y</span></div>
           <div class="dcp-metric-lbl"><b>enterprise software</b><br>delivery experience</div>
         </div>
         <div class="dcp-metric">
@@ -2343,9 +2360,9 @@ footer {
     <div class="about-grid">
       <div>
         <div class="section-eyebrow slate r"><div class="se-dot"></div><div class="se-text">About</div></div>
-        <h2 class="r d1">One person.<br>14 years of <span class="it slate">shipping software<br>that fits.</span></h2>
+        <h2 class="r d1">One person.<br>14 years of <span class="it slate">leading teams<br>and building solutions.</span></h2>
         <div class="about-text r d2" style="margin-top:1.5rem">
-          <p>Hi — I'm the human behind Craig Creative. After 14 years across military operations, Big Four technology consulting, and Fortune 50 enterprise product delivery, I started Craig Creative for one simple reason: <b>most growing businesses can't access the software talent they actually need.</b></p>
+          <p>Hi — I'm Alex, the human behind Craig Creative. After 14 years across military operations, Big Four technology consulting, and Fortune 50 enterprise product delivery, I started Craig Creative for one simple reason: <b>most growing businesses can't access the software talent they actually need.</b></p>
           <p>Big agencies cost $50k+ and treat you like account #847. Junior freelancers ship code that breaks in six months. There's a gap in the middle — and that gap is where I work.</p>
           <p>I bring military execution discipline, consulting-trained strategy, and enterprise-grade product delivery standards — applied to whatever your actual business problem is. Not what's technically interesting. <b>What actually moves your needle.</b></p>
           <p>Modern AI tools like Claude make this possible at a price that makes sense for SMBs. That's the whole pitch.</p>
@@ -2357,7 +2374,7 @@ footer {
           <div class="sc-content">
             <div class="sc-meta"><span>U.S. Military</span><span class="sc-yr">7 yrs</span></div>
             <div class="sc-title">Logistics Officer</div>
-            <div class="sc-desc">Commissioned officer across multiple deployments. Complex planning, team leadership, no excuses. The foundation of how I run every project.</div>
+            <div class="sc-desc">Commissioned officer leading teams and operations across multiple countries. Complex planning, team leadership, no excuses. The foundation of how I run every project.</div>
           </div>
         </div>
         <div class="story-card r d2">
@@ -2374,7 +2391,7 @@ footer {
             <div class="sc-meta"><span>Fortune 50 Enterprise</span><span class="sc-yr">Senior PO</span></div>
             <div class="sc-title">Senior Product Owner — Enterprise Platforms</div>
             <div class="sc-desc">Led Agile teams shipping enterprise software at scale. <b>Worked alongside the engineers and operators who'd use what we built</b> — the methodology that taught me how to deliver software people actually want to use, not just software that technically works.</div>
-            <div class="sc-tag">★ 14 yrs enterprise</div>
+            <div class="sc-tag">★ 7 yrs enterprise</div>
           </div>
         </div>
         <div class="story-card r d4">
@@ -2392,71 +2409,6 @@ footer {
             <div class="sc-title">Founder, Craig Creative</div>
             <div class="sc-desc">Bringing all of that to small and medium businesses — using Claude AI and modern tools to ship enterprise-grade work in weeks, not months.</div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHAT WE BUILD -->
-<section class="builds-section" id="what-we-build">
-  <div class="section-inner">
-    <div class="section-eyebrow r"><div class="se-dot"></div><div class="se-text">What we build</div></div>
-    <h2 class="r d1">Beyond the<br><span class="it">flagship builds.</span></h2>
-    <p class="section-intro r d2">A platform build isn't the right fit for every business. These are the <b>smaller, focused engagements</b> I take on when you need expert help without a full multi-month commitment.</p>
-
-    <div class="builds-grid">
-      <div class="build wide r">
-        <div class="build-icon">📊</div>
-        <div class="build-name">Reporting & Data Tools</div>
-        <div class="build-desc">Stop compiling reports manually. Automated reporting pipelines and KPI dashboards that surface the numbers your business runs on — without anyone pulling them together by hand each week.</div>
-        <div class="build-tags">
-          <span class="btag">reporting</span>
-          <span class="btag">kpi</span>
-          <span class="btag">data</span>
-        </div>
-        <a class="build-arrow" href="#contact">Learn more <span>→</span></a>
-      </div>
-
-      <div class="build wide r d1">
-        <div class="build-icon">⚙</div>
-        <div class="build-name">Custom Web Apps</div>
-        <div class="build-desc">Bespoke web applications built for your exact workflow — and your team's exact way of thinking. Full source code, full documentation. You own everything we build.</div>
-        <div class="build-tags">
-          <span class="btag">react</span>
-          <span class="btag">apis</span>
-          <span class="btag">full-stack</span>
-        </div>
-        <a class="build-arrow" href="#contact">Learn more <span>→</span></a>
-      </div>
-
-      <div class="build r">
-        <div class="build-icon">🧭</div>
-        <div class="build-name">AI Strategy</div>
-        <div class="build-desc">Not sure where AI fits? I'll find the highest-value opportunities and give you a clear plan in plain English.</div>
-        <div class="build-tags">
-          <span class="btag">strategy</span>
-          <span class="btag">roadmap</span>
-        </div>
-      </div>
-
-      <div class="build r d1">
-        <div class="build-icon">🔧</div>
-        <div class="build-name">Process Consulting</div>
-        <div class="build-desc">Have an in-house dev but delivery is chaotic? I'll bring the structured processes that make tech reliable.</div>
-        <div class="build-tags">
-          <span class="btag">audit</span>
-          <span class="btag">coaching</span>
-        </div>
-      </div>
-
-      <div class="build r d2">
-        <div class="build-icon">💡</div>
-        <div class="build-name">Tech Advisor</div>
-        <div class="build-desc">Senior technology thinking without the senior salary. What to build, buy, or avoid — when you need it.</div>
-        <div class="build-tags">
-          <span class="btag">advisory</span>
-          <span class="btag">strategy</span>
         </div>
       </div>
     </div>
@@ -2540,6 +2492,47 @@ footer {
         Tech advisory sessions, audits, and one-off guidance. Expert input on a decision or second opinion on a proposal. <b>2-hour minimum booking.</b>
       </div>
       <a class="pricing-btn" href="#contact" style="margin-top:0;white-space:nowrap;">Book a session →</a>
+    </div>
+
+    <!-- Trust strip — what's included in every project, regardless of tier -->
+    <div class="included-strip">
+      <div class="included-eyebrow">In every engagement</div>
+      <h3 class="included-title">Built to <em>enterprise standards</em> — at SMB prices.</h3>
+      <p class="included-sub">Most freelance shops cut security and quality corners to keep prices low. I don't. The operational discipline I learned in the military and the engineering rigour I learned shipping software at Fortune 50 scale come standard on every project, regardless of tier.</p>
+      <div class="included-grid">
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>Secure auth</b> — SSO, RBAC, audit logs</span>
+        </div>
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>Encrypted</b> — data at rest and in transit</span>
+        </div>
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>Secrets management</b> — no credentials in code</span>
+        </div>
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>Input validation</b> — SQL injection prevention</span>
+        </div>
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>Dependency scanning</b> — known CVEs caught early</span>
+        </div>
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>HTTPS + HSTS</b> — proper TLS configuration</span>
+        </div>
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>Code review</b> — every change reviewed before ship</span>
+        </div>
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>Full source code</b> — you own everything we build</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -2655,16 +2648,15 @@ footer {
             <div class="brand-tag" style="color:rgba(253,252,248,0.55)">Custom Software Solutions</div>
           </div>
         </a>
-        <div class="footer-tag">Custom AI software, built side-by-side with the people who'll use it. For small and medium businesses that deserve enterprise-grade thinking without the enterprise price tag.</div>
+        <div class="footer-tag">Custom AI software, hand-stitched to fit your business. For small and medium businesses that deserve enterprise-grade thinking without the enterprise price tag.</div>
       </div>
       <div>
         <div class="footer-col-title">Explore</div>
         <div class="footer-col-links">
-          <a href="#recently-built">Recent work</a>
+          <a href="#recently-built">What I build</a>
           <a href="#how">How it works</a>
           <a href="#cocreate">Co-creation</a>
           <a href="#about">About</a>
-          <a href="#what-we-build">What we build</a>
           <a href="#pricing">Pricing</a>
         </div>
       </div>
