@@ -1552,6 +1552,7 @@ h2 .it.slate { color: var(--slate); }
 
 /* ──────── PRICING ──────── */
 .pricing-section { background: var(--bg); }
+.standards-section { background: var(--bg-alt); }
 .pricing-intro {
   display: flex; gap: 1rem; align-items: flex-start;
   margin-bottom: 3rem; padding: 1.4rem 1.7rem;
@@ -2058,7 +2059,6 @@ footer {
   <ul class="nav-links">
     <li><a href="#recently-built">What I build</a></li>
     <li><a href="#how">How it works</a></li>
-    <li><a href="#cocreate">Co-creation</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#pricing">Pricing</a></li>
     <li><a class="nav-cta" href="#contact">Let's talk →</a></li>
@@ -2086,7 +2086,7 @@ footer {
     </p>
     <div class="hero-actions r d3">
       <a class="btn-primary" href="#contact"><span>Start a conversation</span><span class="arrow">→</span></a>
-      <a class="btn-ghost" href="#cocreate">See how we work together</a>
+      <a class="btn-ghost" href="#how">See how we work together</a>
     </div>
   </div>
 </section>
@@ -2292,6 +2292,12 @@ footer {
           <div class="scale-pill"><span class="check">✓</span>Audits</div>
         </div>
       </div>
+
+      <div class="cocreate-quote r d3" style="max-width:720px;margin:3rem auto 0;">
+        <div class="cq-mark">"</div>
+        <div class="cq-text">The best internal tools feel obvious in hindsight — like someone watched you struggle, then handed you exactly what you needed.</div>
+        <div class="cq-cite">That's not luck. <b>That's the result of building with users, not for them.</b></div>
+      </div>
     </div>
   </div>
 </section>
@@ -2333,23 +2339,6 @@ footer {
         <div class="loop-headline">The whole project is a <em>feedback loop</em>, not a waterfall.</div>
         <div class="loop-body">You see real progress every week — not just at the end. Your team's input shapes every iteration. And by the time we hand it over, the tool already feels like theirs because they helped build it.</div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- CO-CREATION (the philosophy, not the case study) -->
-<section class="cocreation-section" id="cocreate">
-  <div class="section-inner" style="max-width:880px;text-align:center;">
-    <div class="section-eyebrow r" style="margin:0 auto 1.5rem;"><div class="se-dot"></div><div class="se-text">How we work together</div></div>
-    <h2 class="r d1">Software is better<br>when it's built <span class="it">with the people<br>who'll use it.</span></h2>
-    <div class="about-text r d2" style="margin-top:1.75rem;font-size:1.1rem;line-height:1.75;max-width:680px;margin-left:auto;margin-right:auto;text-align:left;">
-      <p>This way of working didn't come from a textbook. It came from years of watching engineers use early prototypes, capturing every workaround they'd invented, and asking what would make their hardest day easier. <b>Then building exactly that, and bringing it back the next sprint.</b></p>
-      <p>That's the philosophy behind Craig Creative. Every tool I build is co-created with the people whose work it'll change. Not assumptions. Not best practices from a deck. <b>Real conversations, real feedback, real iterations.</b></p>
-    </div>
-    <div class="cocreate-quote r d3" style="max-width:720px;margin:2.5rem auto 0;">
-      <div class="cq-mark">"</div>
-      <div class="cq-text">The best internal tools feel obvious in hindsight — like someone watched you struggle, then handed you exactly what you needed.</div>
-      <div class="cq-cite">That's not luck. <b>That's the result of building with users, not for them.</b></div>
     </div>
   </div>
 </section>
@@ -2409,6 +2398,51 @@ footer {
             <div class="sc-title">Founder, Craig Creative</div>
             <div class="sc-desc">Bringing all of that to small and medium businesses — using Claude AI and modern tools to ship enterprise-grade work in weeks, not months.</div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENTERPRISE STANDARDS (security/quality reassurance, before pricing) -->
+<section class="standards-section" id="standards">
+  <div class="section-inner">
+    <div class="included-strip" style="margin-top:0;padding-top:0;border-top:none;">
+      <div class="included-eyebrow">In every engagement</div>
+      <h3 class="included-title">Built to <em>enterprise standards</em> — at SMB prices.</h3>
+      <p class="included-sub">Most freelance shops cut security and quality corners to keep prices low. I don't. The operational discipline I learned in the military and the engineering rigour I learned shipping software at Fortune 50 scale come standard on every project, regardless of tier.</p>
+      <div class="included-grid">
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>Secure auth</b> — SSO, RBAC, audit logs</span>
+        </div>
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>Encrypted</b> — data at rest and in transit</span>
+        </div>
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>Secrets management</b> — no credentials in code</span>
+        </div>
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>Input validation</b> — SQL injection prevention</span>
+        </div>
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>Dependency scanning</b> — known CVEs caught early</span>
+        </div>
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>HTTPS + HSTS</b> — proper TLS configuration</span>
+        </div>
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>Code review</b> — every change reviewed before ship</span>
+        </div>
+        <div class="included-pill">
+          <span class="ip-check">✓</span>
+          <span class="ip-text"><b>Full source code</b> — you own everything we build</span>
         </div>
       </div>
     </div>
@@ -2492,47 +2526,6 @@ footer {
         Tech advisory sessions, audits, and one-off guidance. Expert input on a decision or second opinion on a proposal. <b>2-hour minimum booking.</b>
       </div>
       <a class="pricing-btn" href="#contact" style="margin-top:0;white-space:nowrap;">Book a session →</a>
-    </div>
-
-    <!-- Trust strip — what's included in every project, regardless of tier -->
-    <div class="included-strip">
-      <div class="included-eyebrow">In every engagement</div>
-      <h3 class="included-title">Built to <em>enterprise standards</em> — at SMB prices.</h3>
-      <p class="included-sub">Most freelance shops cut security and quality corners to keep prices low. I don't. The operational discipline I learned in the military and the engineering rigour I learned shipping software at Fortune 50 scale come standard on every project, regardless of tier.</p>
-      <div class="included-grid">
-        <div class="included-pill">
-          <span class="ip-check">✓</span>
-          <span class="ip-text"><b>Secure auth</b> — SSO, RBAC, audit logs</span>
-        </div>
-        <div class="included-pill">
-          <span class="ip-check">✓</span>
-          <span class="ip-text"><b>Encrypted</b> — data at rest and in transit</span>
-        </div>
-        <div class="included-pill">
-          <span class="ip-check">✓</span>
-          <span class="ip-text"><b>Secrets management</b> — no credentials in code</span>
-        </div>
-        <div class="included-pill">
-          <span class="ip-check">✓</span>
-          <span class="ip-text"><b>Input validation</b> — SQL injection prevention</span>
-        </div>
-        <div class="included-pill">
-          <span class="ip-check">✓</span>
-          <span class="ip-text"><b>Dependency scanning</b> — known CVEs caught early</span>
-        </div>
-        <div class="included-pill">
-          <span class="ip-check">✓</span>
-          <span class="ip-text"><b>HTTPS + HSTS</b> — proper TLS configuration</span>
-        </div>
-        <div class="included-pill">
-          <span class="ip-check">✓</span>
-          <span class="ip-text"><b>Code review</b> — every change reviewed before ship</span>
-        </div>
-        <div class="included-pill">
-          <span class="ip-check">✓</span>
-          <span class="ip-text"><b>Full source code</b> — you own everything we build</span>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -2655,7 +2648,6 @@ footer {
         <div class="footer-col-links">
           <a href="#recently-built">What I build</a>
           <a href="#how">How it works</a>
-          <a href="#cocreate">Co-creation</a>
           <a href="#about">About</a>
           <a href="#pricing">Pricing</a>
         </div>
